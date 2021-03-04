@@ -31,7 +31,7 @@ class Brizy_Content_Placeholders_Filters_FilterQuery {
 				case 'post':
 					foreach ( $filter as $type => $id ) {
 						$params['post_type'] = $type;
-						$params['post__in']  = (array)$id;
+						$params['post__in']  = $id;
 					}
 					break;
 				case 'term':
